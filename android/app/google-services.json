@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "711442751781",
+    "project_id": "agrothink-fdc78",
+    "storage_bucket": "agrothink-fdc78.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:711442751781:android:6dcbbb3cbab76b02b43acc",
+        "android_client_info": {
+          "package_name": "com.company.agrothink"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGc1UvoZRJbiaWekufGK6MbFRcUA_uS7s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
