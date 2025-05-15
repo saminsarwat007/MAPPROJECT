@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'firebase_test_screen.dart'; // Import the new test screen
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -94,6 +95,13 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  void _navigateToFirebaseTest() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const FirebaseTestScreen()),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -149,6 +157,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 textAlign: TextAlign.center,
               ),
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: _navigateToFirebaseTest,
+              child: const Text('Run Firebase Tests'),
             ),
             const SizedBox(height: 20),
             const Text('You have pushed the button this many times:'),
